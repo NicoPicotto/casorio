@@ -11,7 +11,7 @@ const Nosotros = () => {
 				paddingRight={20}
 				spacing={-5}
 			>
-				<Heading fontSize='10em' textAlign={'right'} color='color.cremita'>
+				<Heading fontSize='7em' textAlign={'right'} color='color.cremita'>
 					Nosotros
 				</Heading>
 			</Stack>

@@ -27,26 +27,48 @@ const DrawerComponent = () => {
 				_hover=''
 				_focus=''
 			>
-				<HamburgerIcon color='color.vino' fontSize='4xl' />
+				<HamburgerIcon color='color.beige' fontSize='4xl' />
 			</Button>
 			<Drawer placement={placement} onClose={onClose} isOpen={isOpen} size='md'>
 				<DrawerOverlay />
 				<DrawerContent bgColor='color.verde'>
 					<DrawerBody padding={10}>
-						<Heading marginBottom={5} color='color.cremita'>
-							Inicio
-						</Heading>
-						<Link href="#nosotros" onClick={onClose}>
+						<Link
+							href='#inicio'
+							onClick={onClose}
+							_hover={{ textDecor: 'none' }}
+						>
+							<Heading marginBottom={5} color='color.cremita'>
+								Inicio
+							</Heading>
+						</Link>
+						<Link
+							href='#nosotros'
+							onClick={onClose}
+							_hover={{ textDecor: 'none' }}
+						>
 							<Heading marginBottom={5} color='color.cremita'>
 								Nosotros
 							</Heading>
 						</Link>
-						<Heading marginBottom={5} color='color.cremita'>
-							El evento
-						</Heading>
-						<Heading marginBottom={5} color='color.cremita'>
-							Whataspp
-						</Heading>
+						<Link
+							href='#evento'
+							onClick={onClose}
+							_hover={{ textDecor: 'none' }}
+						>
+							<Heading marginBottom={5} color='color.cremita'>
+								Evento
+							</Heading>
+						</Link>
+						<Link
+							href='#whatsapp'
+							onClick={onClose}
+							_hover={{ textDecor: 'none' }}
+						>
+							<Heading marginBottom={5} color='color.cremita'>
+								Whataspp
+							</Heading>
+						</Link>
 					</DrawerBody>
 				</DrawerContent>
 			</Drawer>
