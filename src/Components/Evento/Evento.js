@@ -1,28 +1,27 @@
 import React from 'react';
-import { Box, Heading, Divider, Stack } from '@chakra-ui/react';
+import { Heading, Divider, Stack, Flex } from '@chakra-ui/react';
 
 const Evento = () => {
 	return (
-		<Box
+		<Flex
 			w='100vw'
 			h='100vh'
 			bgColor='color.verde'
-			id='evento'
-			scrollBehavior='smooth'
-			justifyContent='space-between'
+			id='nosotros'
+			justifyContent='flex-end'
 		>
-			<Stack
-				justifyContent='center'
-				alignItems='flex-end'
-				h='100vh'
-				paddingRight={20}
-				spacing={-5}
-			>
-				<Heading fontSize='7em' textAlign={'right'} color='color.cremita'>
-					Evento
-				</Heading>
-			</Stack>
-		</Box>
+			<Flex h='10vh' alignItems='center' justifyContent='flex-end'>
+				<Flex paddingInlineEnd={10}>
+					<Divider borderColor='color.cremita' w='72vw' />
+				</Flex>
+				<Flex w='fit-content' justifyContent='flex-end'>
+					<Heading color='color.cremita'>Evento</Heading>
+				</Flex>
+			</Flex>
+			<Flex margin={10}>
+				<Divider orientation='vertical' borderColor='color.cremita' />
+			</Flex>
+		</Flex>
 	);
 };
 

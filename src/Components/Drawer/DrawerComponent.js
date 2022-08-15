@@ -20,14 +20,15 @@ const DrawerComponent = () => {
 		<Box position={'fixed'}>
 			<Button
 				onClick={onOpen}
-				margin={10}
+				h="10vh"
+				marginLeft={5}
 				size='lg'
 				padding={0}
 				bgColor='transparent'
 				_hover=''
 				_focus=''
 			>
-				<HamburgerIcon color='color.beige' fontSize='4xl' />
+				<HamburgerIcon color='color.beige' fontSize='3xl' />
 			</Button>
 			<Drawer placement={placement} onClose={onClose} isOpen={isOpen} size='md'>
 				<DrawerOverlay />

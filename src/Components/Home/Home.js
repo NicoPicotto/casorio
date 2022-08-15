@@ -1,37 +1,27 @@
 import React from 'react';
-import { Box, Heading, Flex, Stack } from '@chakra-ui/react';
+import { Heading, Flex, Divider } from '@chakra-ui/react';
 
 const Home = () => {
 	return (
-		<Box w='100vw' h='100vh' bgColor='color.cremita' id='inicio'>
-			<Stack
-				justifyContent='center'
-				alignItems='flex-end'
-				h='100vh'
-				paddingRight={20}
-				spacing={-5}
-			>
-				<Heading fontSize='7em' textAlign={'right'} color='color.beige'>
-					Casorio
-				</Heading>
-				<Flex>
-					<Heading
-						fontSize='7em'
-						textAlign={'right'}
-						color='color.vino'
-						marginRight={8}
-					>
-						Rocilda
-					</Heading>
-					<Heading fontSize='7em' textAlign={'right'} color='color.beige'>
-						&
-					</Heading>
+		<Flex
+			w='100vw'
+			h='100vh'
+			bgColor='color.cremita'
+			id='inicio'
+			justifyContent='flex-end'
+		>
+			<Flex h='10vh' alignItems='center' justifyContent='flex-end'>
+				<Flex paddingInlineEnd={10}>
+					<Divider borderColor='color.vino' w='72vw' />
 				</Flex>
-				<Heading fontSize='7em' textAlign={'right'} color='color.vino'>
-					Picotto
-				</Heading>
-			</Stack>
-		</Box>
+				<Flex w='fit-content' justifyContent='flex-end'>
+					<Heading color='color.vino'>Casorio Ro & Nico</Heading>
+				</Flex>
+			</Flex>
+			<Flex margin={10}>
+				<Divider orientation='vertical' borderColor='color.vino' />
+			</Flex>
+		</Flex>
 	);
 };
 
